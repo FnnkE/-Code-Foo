@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/67f8a6e804.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Code Foo IGN Video Player</title>
+</head>
+
+<body style="margin: 0">
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="/" id="navbar_logo">IGN</a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="https://store.ign.com" class="navbar_links">
+                            Store
+                        </a>
+
+                    </li>
+                    <li class="navbar_item">
+                        <a href="https://www.ign.com/news" class="navbar_links">
+                            News
+                        </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="https://www.ign.com/videos" class="navbar_links">
+                            Videos
+                        </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="https://www.ign.com/reviews" class="navbar_links">
+                            Reviews
+                        </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="https://www.ign.com/wikis" class="navbar_links">
+                            Wikis
+                        </a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="https://www.ign.com/playli" class="navbar_links">
+                            Playlists
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="c-video">
+                <video id="video"></video>
+                <div class="controls">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="buttons">
+                        <button id="play"></button>
+                        <button id="loop"></button>
+                        <button id="volume"></button>
+                        <input id = "vol-control" type="range" min="0" max="100" step="1" oninput="setVolume(this.value)" onchange="setVolume(this.value)">
+                        <button id="fullscreen"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="video-text">
+                <h1 id="title"></h1>
+                <p id="description"></p>
+            </div>
+            <div id="playlist">
+                <div class="card" id="card1">
+                    <img id="card-image1" src="">
+                    <h2 id="card-title1"></h2>
+                </div>
+                <div class="card" id="card2">
+                    <img id="card-image2" src="">
+                    <h2 id="card-title2"></h2>
+                </div>
+                <div class="card" id="card3">
+                    <img id="card-image3" src="">
+                    <h2 id="card-title3"></h2>
+                </div>
+                <div class="card" id="card4">
+                    <img id="card-image4" src="">
+                    <h2 id="card-title4"></h2>
+                </div>
+                <div class="card" id="card5">
+                    <img id="card-image5" src="">
+                    <h2 id="card-title5"></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/videoPlayer.js"></script>
+    <script src="js/playlist.js"></script>
+</body>
+
+</html>
